@@ -1,7 +1,7 @@
 /*--
     Archivo Principal
-        Este archivo permite la ejecucion 
-        de la pagina por medio de un 
+        Este archivo permite la ejecución 
+        de la página por medio de un 
         protocolo 'http'.
         Directorio de archivos a mostrar: '/web/'
 --*/
@@ -66,7 +66,7 @@ http.createServer(function (request, response) {
             }
             else { // Otros errores
                 response.writeHead(500);
-                response.end('Ocurrio un error al intentar cargar la pagina!\n ' + error);
+                response.end('Ocurrió un error al intentar cargar la pagina!\n ' + error);
                 response.end(); 
             }
         }
@@ -81,5 +81,5 @@ http.createServer(function (request, response) {
 console.log(
     '\n',
     '-------------- Init WebPage --------------',
-    config.maintenance === true ? '\n ------------- En mantenimiento -----------' : '\n'
+    config.maintenance === true ? '\n ------------- En Mantenimiento -----------' : '\n'
 );
